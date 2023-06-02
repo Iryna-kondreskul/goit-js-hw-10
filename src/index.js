@@ -32,7 +32,7 @@ function createMarkup(evt){
     fetchCatByBreed(evt.target.value)
     .then(createCardCat)
     .catch(() => error.classList.remove('is-hidden'))
-    .finally(() => loaderEl.classList.add('ia-hidden'));
+    .finally(() => loaderEl.classList.add('is-hidden'));
 }
 
 function createCardCat(cat){
